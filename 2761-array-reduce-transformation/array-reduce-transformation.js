@@ -5,9 +5,9 @@
  * @return {number}
  */
 var reduce = function(nums, fn, init) {
-    let val = init;
-    for (let i = 0; i < nums.length; i++) {
-        val = fn(val, nums[i]); 
+    let sum=init;
+    for(let i=0;i<nums.length;i++){
+        sum = fn(sum,nums[i]);
     }
-    return val;
+    return sum;
 };
